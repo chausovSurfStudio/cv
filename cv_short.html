@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Александр Чаусов — CV (краткая версия)</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --faint: #777;
+    --accent: #0a5c6b;
+    --accent-soft: #e8f1f2;
+    --rule: #d8dcde;
+    --link: #0a5c6b;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    font-size: 10.3px;
+    line-height: 1.45;
+    margin: 0;
+    padding: 0;
+  }
+  .page { max-width: 780px; margin: 0 auto; padding: 0 4px; }
+
+  /* Header */
+  header { margin-bottom: 14px; }
+  h1 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    margin: 0 0 2px;
+  }
+  .subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  .contacts {
+    font-size: 10px;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    margin-bottom: 6px;
+  }
+  .contacts a { color: var(--link); text-decoration: underline; }
+  .worktype { font-size: 10px; color: var(--faint); }
+
+  /* Sections */
+  section { margin-top: 13px; page-break-inside: auto; }
+  h2 {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 3px;
+    margin: 0 0 7px;
+    break-after: avoid; page-break-after: avoid;
+  }
+  h3 { font-size: 11.5px; font-weight: 700; margin: 0 0 1px; break-after: avoid; page-break-after: avoid; }
+  section.keep { break-inside: avoid; page-break-inside: avoid; }
+  .role-period { font-size: 10px; color: var(--faint); margin: 0 0 6px; font-weight: 600; }
+
+  ul { margin: 4px 0 0; padding-left: 16px; }
+  li { margin-bottom: 2.5px; }
+  p { margin: 0 0 6px; }
+
+  .highlights li { margin-bottom: 3px; }
+
+  /* Tech stack table */
+  table { width: 100%; border-collapse: collapse; margin-top: 4px; }
+  td { vertical-align: top; padding: 3px 8px 3px 0; border-bottom: 1px solid var(--rule); }
+  td.cat { width: 34%; font-weight: 700; color: var(--ink); }
+
+  /* Projects — one-liners for the short version */
+  .duties-intro { font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+  .projects li { margin-bottom: 5px; }
+  .projects .period { font-weight: 600; color: var(--faint); font-size: 9.5px; }
+  .projects a { color: var(--link); }
+
+  .about p { margin-bottom: 6px; }
+
+  @page { size: A4; margin: 13mm 14mm; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Александр Чаусов</h1>
+    <div class="subtitle">iOS Developer &amp; Team Lead</div>
+    <div class="contacts">
+      <span>📍 Россия, Воронеж</span>
+      <span>💬 Telegram @Alexander_Tchausoff</span>
+      <span>📧 traktoro_13@mail.ru</span>
+      <span>🔗 <a href="https://github.com/chausovSurfStudio">github.com/chausovSurfStudio</a></span>
+    </div>
+    <div class="worktype">Формат работы: офис / гибрид / удалёнка &nbsp;·&nbsp; Релокация: не готов</div>
+  </header>
+
+  <section>
+    <h2>Кратко</h2>
+    <ul class="highlights">
+      <li>11 лет коммерческой iOS-разработки, 8+ лет управляю командами (до 5 человек).</li>
+      <li>12 проектов в доменах банкинг, e-comm, med-tech и fin-tech — часть доведены с нуля до релиза.</li>
+      <li>Вывод приложения в AppStore в условиях санкций, включая обход блокировок публикации.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Основные навыки</h2>
+    <ul>
+      <li>iOS-разработка</li>
+      <li>Декомпозиция, проектирование, code review</li>
+      <li>Рефакторинг</li>
+      <li>Опыт публикации приложений в AppStore, практический опыт обхода санкций</li>
+      <li>Интеграция сторонних сервисов</li>
+      <li>Unit- и snapshot-тесты</li>
+      <li>AI-агентная разработка</li>
+      <li>Опыт работы в ролях TeamLead и TechLead</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Технологический стек</h2>
+    <table>
+      <tr><td class="cat">Языки</td><td>Swift, Objective-C</td></tr>
+      <tr><td class="cat">UI</td><td>UIKit, Auto Layout, вёрстка кодом и в Interface Builder (Storyboard/XIB), SwiftUI</td></tr>
+      <tr><td class="cat">Архитектуры</td><td>MVC, MVP, MVVM, VIPER, Coordinator, модульная архитектура</td></tr>
+      <tr><td class="cat">Многопоточность и реактивность</td><td>GCD, Operation/OperationQueue, Swift Concurrency (async/await, actors), Combine</td></tr>
+      <tr><td class="cat">Сетевой слой</td><td>URLSession, Alamofire, REST API, Swagger</td></tr>
+      <tr><td class="cat">Аналитика и мониторинг</td><td>Firebase, Crashlytics, AppMetrica</td></tr>
+      <tr><td class="cat">Тестирование</td><td>XCTest, unit-тесты, snapshot-тесты, UI-тесты</td></tr>
+      <tr><td class="cat">Управление зависимостями</td><td>CocoaPods, SPM</td></tr>
+      <tr><td class="cat">CI/CD и автоматизация</td><td>Fastlane, Jenkins, GitHub Actions, Xcodegen, SwiftFormat, SwiftLint</td></tr>
+      <tr><td class="cat">AI-агентная разработка</td><td>Claude Code (CLI), Cursor, OpenSpec</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Опыт работы</h2>
+    <h3>iOS-разработчик / Team Lead / iOS Tech Lead — ООО «Surf»</h3>
+    <div class="role-period">Сентябрь 2015 — настоящее время</div>
+    <p>Прошёл путь от iOS-стажёра до Tech Lead: разработка, поддержка и развитие приложений в разных доменах, управление командой и выстраивание процессов отдела.</p>
+
+    <h3 style="margin-top:9px">Ключевые проекты</h3>
+    <p class="duties-intro">В обратном хронологическом порядке. Во всех — роль Team Lead: проектирование и оценка, декомпозиция задач, code review, работа с клиентом, проведение 1-1 и развитие команды, плюс непосредственная разработка фич.</p>
+    <ul class="projects">
+      <li><b>▸ Банк Зенит</b> <span class="period">(2024–2026, банкинг, команда 3–5)</span> — обход блокировок AppStore и масштабная оптимизация проекта под эти работы, 4 успешных релиза, настройка CI/CD, миграция с CocoaPods на SPM.</li>
+      <li><b>▸ NDA — fin-tech</b> <span class="period">(2024, команда 2)</span> — нативная обёртка над PWA, WebAuthn на нативной стороне, помощь коллегам на Android.</li>
+      <li><b>▸ NDA — med-tech</b> <span class="period">(2021–2022, команда 2–4)</span> — два приложения (врач и пациент) на одной кодовой базе, проектирование API-контракта, экономия ~2 человеко-месяцев относительно Android.</li>
+      <li><b>▸ Бетховен — e-comm</b> <span class="period">(2020–2021, команда 2–3)</span> — e-comm-приложение с нуля до релиза за ~7 месяцев, рост конверсии в 3 раза, награды The Sammy Award 2022 и топ-10 дизайнов по версии Workspace. <a href="https://surf.ru/cases/bethoven/">Кейс</a>.</li>
+      <li><b>▸ Rendez-Vous — e-comm</b> <span class="period">(2019–2020, команда 2–5)</span> — новый продукт, работа без аналитиков, рост retention и конверсии, передача на поддержку inhouse-команде. <a href="https://surf.ru/cases/rendez/">Кейс</a>.</li>
+      <li><b>▸ Магнит — программа лояльности</b> <span class="period">(2019, команда 1–4)</span> — точечный рефакторинг legacy-базы под новую программу лояльности, успешный запуск, рост доли пользователей в 3 раза. <a href="https://surf.ru/cases/magnit/">Кейс</a>.</li>
+    </ul>
+  </section>
+
+  <section class="keep">
+    <h2>Образование</h2>
+    <p style="margin-bottom:4px"><b>Воронежский государственный университет (ВГУ)</b><br>
+    Бакалавр · Прикладная математика и информатика · 2012 — 2016</p>
+    <p><b>Воронежский государственный университет (ВГУ)</b><br>
+    Магистр · Фундаментальная информатика и информационные технологии (разработка мобильных приложений) · 2016 — 2018</p>
+  </section>
+
+  <section class="keep">
+    <h2>Языки</h2>
+    <ul>
+      <li>Русский — родной.</li>
+      <li>Английский — A2, свободно читаю техническую документацию.</li>
+    </ul>
+  </section>
+
+  <section class="about keep">
+    <h2>О себе</h2>
+    <ul>
+      <li>Построил дом — от голой идеи до готового результата. Проникся большим уважением к PM-ам: понял, как тяжело принимать решения, когда в технических деталях до конца не разбираешься.</li>
+      <li>Занимался музыкой: играю на скрипке, фортепиано, гитаре и ударных. Не виртуозно, но могу.</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>

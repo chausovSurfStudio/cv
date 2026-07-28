@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александр Чаусов — CV</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --faint: #777;
+    --accent: #0a5c6b;
+    --accent-2: #0d7183;
+    --bg: #f4f6f7;
+    --card: #ffffff;
+    --rule: #e2e6e8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
+
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.3px; margin: 0 0 4px; }
+  .subtitle { font-size: 15px; font-weight: 600; color: var(--accent); margin: 0 0 14px; }
+  .contacts { font-size: 13px; color: var(--muted); }
+  .contacts span { display: inline-block; margin: 0 8px 4px; }
+  .contacts a { color: var(--accent); text-decoration: none; }
+  .contacts a:hover { text-decoration: underline; }
+
+  .lead { text-align: center; color: var(--muted); font-size: 14px; margin: 0 auto 30px; max-width: 520px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  }
+  .card h2 { font-size: 17px; margin: 0 0 4px; }
+  .card .tag {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .5px;
+    text-transform: uppercase; color: var(--accent);
+    background: #e8f1f2; border-radius: 20px; padding: 2px 10px; margin-bottom: 8px;
+  }
+  .card p { margin: 0 0 16px; color: var(--muted); font-size: 13.5px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 13.5px; font-weight: 600; text-decoration: none;
+    padding: 9px 16px; border-radius: 8px; border: 1px solid transparent;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-2); }
+  .btn-ghost { background: #fff; color: var(--accent); border-color: var(--accent); }
+  .btn-ghost:hover { background: #eef5f6; }
+
+  footer { text-align: center; margin-top: 28px; font-size: 12px; color: var(--faint); }
+  footer a { color: var(--faint); }
+
+  @media (max-width: 480px) {
+    .btn { flex: 1 1 auto; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Александр Чаусов</h1>
+      <div class="subtitle">iOS Developer &amp; Team Lead</div>
+      <div class="contacts">
+        <span>📍 Россия, Воронеж</span>
+        <span>💬 Telegram @Alexander_Tchausoff</span>
+        <span>📧 traktoro_13@mail.ru</span>
+        <span>🔗 <a href="https://github.com/chausovSurfStudio">GitHub</a></span>
+      </div>
+    </header>
+
+    <p class="lead">11 лет коммерческой iOS-разработки, 8+ лет управления командами. Резюме доступно в двух вариантах — выберите удобный.</p>
+
+    <div class="card">
+      <span class="tag">Рекомендуется для быстрого просмотра</span>
+      <h2>Краткая версия</h2>
+      <p>Одна страница: ключевые навыки, стек и проекты. Для быстрого скрининга.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv_short.pdf" download>⬇ Скачать PDF</a>
+        <a class="btn btn-ghost" href="cv_short.html">👁 Смотреть онлайн</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Полная версия</h2>
+      <p>Развёрнуто: все проекты, достижения в роли Tech Lead, публикации и подробный стек.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv.pdf" download>⬇ Скачать PDF</a>
+        <a class="btn btn-ghost" href="cv.html">👁 Смотреть онлайн</a>
+      </div>
+    </div>
+
+    <footer>
+      Исходники в формате Markdown:
+      <a href="cv_short.md">cv_short.md</a> · <a href="cv.md">cv.md</a>
+    </footer>
+  </div>
+</body>
+</html>
