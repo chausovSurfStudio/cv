@@ -51,9 +51,9 @@
 | Категория | Технологии |
 | --- | --- |
 | Языки | Swift, Objective-C |
-| UI | UIKit, Auto Layout, вёрстка кодом и в Interface Builder (Storyboard/XIB), кастомные transition-анимации, SwiftUI |
+| UI | UIKit, Auto Layout, вёрстка кодом и в Interface Builder (Storyboard/XIB), кастомные transition-анимации |
 | Архитектуры | MVC, MVP, MVVM, VIPER, Coordinator, модульная архитектура |
-| Многопоточность и реактивность | GCD, Operation/OperationQueue, Swift Concurrency (async/await, actors), Combine |
+| Многопоточность и реактивность | GCD, Operation/OperationQueue, Combine |
 | Сетевой слой | URLSession, Alamofire, REST API, Swagger |
 | Сервисы Apple | Push Notifications (APNs), PassKit, CoreLocation, CoreML, StoreKit, Deep Links / Universal Links |
 | Карты | Yandex MapKit, Google Maps, Apple MapKit |

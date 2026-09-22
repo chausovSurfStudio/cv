@@ -37,9 +37,9 @@
 | Категория | Технологии |
 | --- | --- |
 | Языки | Swift, Objective-C |
-| UI | UIKit, Auto Layout, вёрстка кодом и в Interface Builder (Storyboard/XIB), SwiftUI |
+| UI | UIKit, Auto Layout, вёрстка кодом и в Interface Builder (Storyboard/XIB) |
 | Архитектуры | MVC, MVP, MVVM, VIPER, Coordinator, модульная архитектура |
-| Многопоточность и реактивность | GCD, Operation/OperationQueue, Swift Concurrency (async/await, actors), Combine |
+| Многопоточность и реактивность | GCD, Operation/OperationQueue, Combine |
 | Сетевой слой | URLSession, Alamofire, REST API, Swagger |
 | Аналитика и мониторинг | Firebase, Crashlytics, AppMetrica |
 | Тестирование | XCTest, unit-тесты, snapshot-тесты, UI-тесты |
